@@ -1,0 +1,29 @@
+﻿<Page x:Class="mohamedZakaryia_0522012.ForgetPassPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:mohamedZakaryia_0522012"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ForgetPassPage">
+
+    <Grid Background="white">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="280"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label FontSize="45" Margin="210,5,238,218">Forget Pass Form</Label>
+        <Label Style="{StaticResource LabelStyles}" FontFamily="SansSerif" Margin="161,140,424,91">Phone Number</Label>
+        <Label Style="{StaticResource LabelStyles}" Margin="73,21,512,-51" Grid.Row="1">Enter New Pass</Label>
+        <Label Style="{StaticResource LabelStyles}" Margin="458,21,127,-51" Grid.Row="1">Confirm Pass</Label>
+        <TextBox Style="{StaticResource TextStyles}" x:Name="txtPhone" Margin="400,140,177,91"/>
+        <TextBox Style="{StaticResource TextStyles}" x:Name="txtNewPass" Margin="106,79,544,-99" Grid.Row="1"/>
+        <TextBox Style="{StaticResource TextStyles}" x:Name="txtNewConf" Margin="490,79,160,-99" Grid.Row="1"/>
+        <Border Background="Aqua" Margin="0,263,0,0" Grid.RowSpan="2"/>
+        <Border Background="Aqua" Margin="0,136,0,-153" Grid.Row="1"/>
+        <Border Width="50" Background="Aqua" Margin="0,0,750,-142" Grid.Row="1"/>
+        <Border Width="50" Background="Aqua" Margin="750,0,0,-142" Grid.Row="1"/>
+        <Button Style="{StaticResource ButtonStyles}" Margin="294,73,346,-99" Grid.Row="1" Click="Button_Click">Update Pass</Button>
+    </Grid>
+</Page>

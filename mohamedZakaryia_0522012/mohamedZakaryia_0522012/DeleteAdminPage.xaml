@@ -1,0 +1,22 @@
+﻿<Page x:Class="mohamedZakaryia_0522012.DeleteAdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:mohamedZakaryia_0522012"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DeleteAdminPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="243"/>
+            <RowDefinition Height="auto" MinHeight="157"/>
+        </Grid.RowDefinitions>
+        <Label Style="{StaticResource LabelStyles}" Margin="57,82,517,97" Content="Phone Number"/>
+        <TextBox Style="{StaticResource TextStyles}" x:Name="txtPhone" Margin="308,82,253,97"/>
+        <Button Style="{StaticResource ButtonStyles}" x:Name="btnDelete" Margin="583,82,68,97" Content="Delete" Click="btnDelete_Click"/>
+        <Button Style="{StaticResource ButtonStyles}" x:Name="btnSearch" Margin="398,161,253,18" Content="Search" Click="btnSearch_Click"/>
+        <DataGrid x:Name="dataGrid" Margin="114,10,114,-18" Grid.Row="1"/>
+    </Grid>
+</Page>

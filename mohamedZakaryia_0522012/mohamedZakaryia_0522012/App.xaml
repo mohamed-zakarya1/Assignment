@@ -1,0 +1,29 @@
+﻿<Application x:Class="mohamedZakaryia_0522012.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:mohamedZakaryia_0522012"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="LabelStyles" TargetType="Label">
+            <Setter Property="Background" Value="Red"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="FontFamily" Value="sansSerif"></Setter>
+            <Setter Property="Margin" Value="16,50,681,372"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+        <Style x:Key="TextStyles" TargetType="TextBox">
+            <Setter Property="Background" Value="Bisque"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
+            <Setter Property="FontFamily" Value="sansSerif"></Setter>
+            <Setter Property="Margin" Value="50,50,25,33"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+        </Style>
+        <Style x:Key="ButtonStyles" TargetType="Button">
+            <Setter Property="Background" Value="Blue"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
+            <Setter Property="FontFamily" Value="sansSerif"></Setter>
+            <Setter Property="Margin" Value="50,50,50,33"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>

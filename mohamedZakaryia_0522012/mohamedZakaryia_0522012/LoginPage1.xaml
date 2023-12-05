@@ -1,0 +1,22 @@
+﻿<Page x:Class="mohamedZakaryia_0522012.LoginPage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:mohamedZakaryia_0522012"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage1">
+
+    <Grid Background="White">
+        <Label FontSize="45" Margin="400,10,50,359" Content="Login Form"/>
+        <Label Style="{StaticResource LabelStyles}" FontFamily="SansSerif" Margin="175,96,469,304" Content="UserName"/>
+        <Label Style="{StaticResource LabelStyles}" Margin="175,180,469,226" Content="Password"/>
+        <TextBox Style="{StaticResource TextStyles}" x:Name="txtUSer" Margin="400,106,190,314" TextChanged="txtUSer_TextChanged"/>
+        <TextBox Style="{StaticResource TextStyles}" x:Name="txtPass" Margin="400,187,190,233" TextChanged="txtPass_TextChanged"/>
+        <Button Style="{StaticResource ButtonStyles}" x:Name="btnLogin" Margin="566,330,119,50" Click="btnLogin_Click" Content="Login"/>
+        <Button Style="{StaticResource ButtonStyles}" x:Name="btnSignUp" Margin="355,330,322,50" Click="btnSignUp_Click" Content="SignUp"/>
+        <Button Style="{StaticResource ButtonStyles}" x:Name="btnForgetPass" Margin="130,330,547,50" Click="btnForgetPass_Click" Content="ForgetPass"/>
+        <Button x:Name="btnAdmin" Style="{StaticResource ButtonStyles}" Margin="566,252,119,147" Click="btnAdmin_Click">Admin</Button>
+    </Grid>
+</Page>
